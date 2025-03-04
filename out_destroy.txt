@@ -1,0 +1,29 @@
+PS D:\devops_quiz-main\devops_quiz-main> terraform destroy
+docker_image.node_app: Refreshing state... [id=sha256:512bc7f93b1cd61f26c94e4f2b809fcfa90ef577db27c906c71bf1068c1afa5dnode:18]
+docker_container.web_app: Refreshing state... [id=d797f94e12bbdb390305e7d1f8f50484e2caa4c61202e6bc2e4a965ecf716696]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # docker_image.node_app will be destroyed
+  - resource "docker_image" "node_app" {
+      - id          = "sha256:512bc7f93b1cd61f26c94e4f2b809fcfa90ef577db27c906c71bf1068c1afa5dnode:18" -> null
+      - image_id    = "sha256:512bc7f93b1cd61f26c94e4f2b809fcfa90ef577db27c906c71bf1068c1afa5d" -> null
+      - name        = "node:18" -> null
+      - repo_digest = "node@sha256:ba756f198b4b1e0114b53b23121c8ae27f7ae4d5d95ca4a0554b0649cc9c7dcf" -> null
+    }
+
+Plan: 0 to add, 0 to change, 1 to destroy.
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+docker_image.node_app: Destroying... [id=sha256:512bc7f93b1cd61f26c94e4f2b809fcfa90ef577db27c906c71bf1068c1afa5dnode:18]
+docker_image.node_app: Destruction complete after 1s
+
+Destroy complete! Resources: 1 destroyed.
