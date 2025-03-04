@@ -20,6 +20,6 @@ app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
 });
 app.get('/name', (req, res) => {
-    res.send('<h1>แนะนำตัว</h1> <br> Hello my name is Chayanin <br> Lastname: Kummuang <br>  Student ID:65310869 <br> ตำบล: คุ้งสำเภา อำเภอ: มโนรมย์ จังหวัด: ชัยนาท <br>'
+    res.send('<h1>แนะนำตัว</h1> <br> Hello my name is Pongtham <br> Lastname: Deebookum <br>  Student ID:653129'
     );
 });
